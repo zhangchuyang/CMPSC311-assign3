@@ -1,0 +1,16 @@
+k2:
+gcc main.c -c -Wall -g -I../include -o main.o
+
+//gcc -Wall -g -I../include -c secret_math.c -o secret_math.o
+//gcc -Wall -g -I../include -c secret_message.c -o secret_unused.o
+//gcc -Wall -g -I../include -c secret_unused.c -o secret_unused.o
+//gcc -o secret main.o secret_math.o secret_message.o secret_unused.o
+
+gcc -c -Wall -I../include secret_*.c
+
+ar rcs libsecret.a secret_math.o secret_message.o secret_unused.o
+
+gcc main.o -g -L../lib -lsecret -o final_program
+
+
+

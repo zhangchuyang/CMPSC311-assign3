@@ -1,0 +1,20 @@
+#task1:
+
+egrep -r -n hello task1
+
+#OUTPUT:
+task1/folder1/folder4/folder6/history.txt:5:hello
+task1/folder1/folder5/folder7/try.txt:3:hello to regret
+task1/folder1/folder5/temp.txt:4:hello jimS
+task1/folder3/folder12/folder14/imagine.txt:1:into hello
+
+
+egrep -r -n "[a-zA-Z ]*^r[a-zA-Z]*s$[a-zA-Z ]*" task1
+
+
+#OUTPUT:
+task1/folder1/folder4/extern.txt:2:ramblings of the town
+task1/folder1/folder4/extern.txt:3:racecars similar
+task1/folder1/folder5/incite.txt:2:raises temp
+task1/folder3/folder12/folder14/folder15/inside.txt:5:rags
+

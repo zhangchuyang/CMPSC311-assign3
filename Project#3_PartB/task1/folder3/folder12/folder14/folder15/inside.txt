@@ -1,0 +1,7 @@
+blast off
+light 
+harness
+glimmer
+rags
+damage
+
